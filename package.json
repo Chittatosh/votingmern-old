@@ -7,7 +7,7 @@
     "node": "8.9.0"
   },
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "babel-node lib/index.js",
     "heroku-postbuild": "babel lib -d dist",
     "serve": "nodemon lib/index.js --exec babel-node",
     "test": "mocha --require babel-register"
